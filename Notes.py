@@ -1,3 +1,5 @@
+import random
+
 print("hello world")
 
 # Salvador Ornelas jr
@@ -21,14 +23,14 @@ car_mpg = 9000.1
 # Inline printing
 print("I have a car called the %s" % car_name)
 
-# Asking for input
-name = input("whats your name? ") # in python 3, it is just called input()
-print("hello %s." % name)
-
-age = input("how old are you?") # in python 3, it is just called input()
-print("%s?! wow you are so young !" % age)
-song = input("whats your favorite song") # in python 3, is just called input
-print("%s?! wow that song is lit !" % song)
+# # Asking for input
+# name = input("whats your name? ") # in python 3, it is just called input()
+# print("hello %s." % name)
+#
+# age = input("how old are you?") # in python 3, it is just called input()
+# print("%s?! wow you are so young !" % age)
+# song = input("whats your favorite song") # in python 3, is just called input
+# print("%s?! wow that song is lit !" % song)
 
 # functions
 
@@ -51,9 +53,9 @@ say_hi("timmy turner")
 
 
 def print_age(name, age):
-    print("%s is $d years old." % (name, age))
+    print("%s is %d years old." % (name, age))
     age += 1  # age = age +1
-    print("next year they will be %d" % age)
+    print("next year he will be %d" % age)
 
 
 print_age("Timmy turner", 15)
@@ -80,3 +82,36 @@ def grade_calc(percentage):
         return "D"
     elif percentage >= 50 :
         return "F"
+
+
+'''write a function called "happy_bday"
+that "sings" (prints) happy birthday
+
+
+It must take one parameter called "name"
+'''
+
+def happy_bday(name):
+    print("happy bithday to you")
+    print("happy bithday to you")
+    print("happy bithday dear " + name)
+    print("happy bithday to you" + ".")
+
+happy_bday("timmy")
+
+
+# Loops
+
+# for num in range (1000000):
+#     print(num + 1)
+
+# DO NOT RUN!!!
+a = 1
+while a < 10:
+    print(a)
+    a += 1
+
+
+# random numbers
+
+print (random.randint(0, 100))
