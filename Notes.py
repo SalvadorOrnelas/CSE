@@ -24,13 +24,12 @@ car_mpg = 9000.1
 print("I have a car called the %s" % car_name)
 
 # # Asking for input
-# name = input("whats your name? ") # in python 3, it is just called input()
-# print("hello %s." % name)
-#
-# age = input("how old are you?") # in python 3, it is just called input()
-# print("%s?! wow you are so young !" % age)
-# song = input("whats your favorite song") # in python 3, is just called input
-# print("%s?! wow that song is lit !" % song)
+ #name = input("whats your name? ") # in python 3, it is just called input()
+ #print("hello %s." % name)
+ #age = input("how old are you?") # in python 3, it is just called input()
+ #print("%s?! wow you are so young !" % age)
+ #song = input("whats your favorite song") # in python 3, is just called input
+ #print("%s?! esketittttt !" % song)
 
 # functions
 
@@ -106,12 +105,146 @@ happy_bday("timmy")
 #     print(num + 1)
 
 # DO NOT RUN!!!
-a = 1
-while a < 10:
-    print(a)
-    a += 1
+#a = 1
+#while a < 10:
+    #print(a)
+    #a += 1
 
 
 # random numbers
 
-print (random.randint(0, 100))
+#print (random.randint(0, 100))
+
+
+# lists
+
+#the_count = [1, 2, 3, 4, 5]
+#shopping_list = ["Noodles", "eggrolls", "milk", "rice", "soda"]
+
+#print(shopping_list[0])
+
+#print(len(shopping_list))
+
+# going through a list
+#for item in shopping_list:
+    #print(item)
+
+#for num in the_count:
+    #print(num * 2)
+
+#len(shopping_list)  # Gives me the length of the list
+#range(3)  # Gives a list of the numbers of 0 through 2
+#range(len(shopping_list))  # A list of every index in a list
+
+#for num in range(len(shopping_list)):
+    #item = shopping_list[num]
+    #print("the item at the index %d is %s" % (num, item))
+
+# Turn things into a list
+#str1 = "hello class!"
+#listOne = list(str1)
+#print(listOne)
+#listOne[11] = '.'
+#print(listOne)
+#print("". join(listOne))
+
+# Add things to a list
+#shopping_list.append("Malic acid")
+#print(shopping_list)
+
+# Removing things from a list
+#shopping_list.remove("soda")
+#print(shopping_list)
+#shopping_list.pop(0)
+#print(shopping_list)
+
+# The string class
+import string
+print(string.ascii_letters)
+print(string.ascii_lowercase)
+print(string.punctuation)
+print(string.digits)
+
+# Dealing with string
+strTwo = "ThIs iS a VeRY oDd sEnTenCE"
+lowercase = strTwo.lower()
+print(lowercase)
+
+
+
+dictionary = {'name': 'lance', 'age': 23, 'height': 5}
+
+
+print(dictionary['name'])
+print(dictionary['age'])
+print(dictionary['height'])
+
+large_dictionary = {
+    'CA': 'california',
+    'FL': 'Florida',
+    'OH': "Ohio"
+}
+
+
+print(large_dictionary['CA'])
+print(large_dictionary['FL'])
+print(large_dictionary['OH'])
+
+larger_dictionary = {
+    'CA': [
+        "Fresno",
+        "San Jose",
+        "Los Angeles"
+    ],
+    'FL': [
+        "Tampa",
+        "Orlando",
+        "Miami"
+    ],
+    'OH': [
+        "Clevland",
+        "cincinnati",
+        "dayton"
+    ]
+}
+
+print(larger_dictionary['OH'])
+print(larger_dictionary["OH"][1])
+
+largest_dictionary = {
+    'CA': {
+        'NAME': 'California',
+        'POPULATION': 39250000,
+        'BORDER ST': [
+            'Oregon',
+            'Nevada',
+            'Arizona'
+        ]
+    },
+    'AZ': {
+        'NAME': 'Arizona',
+        'POPULATION': 6931000,
+        'BORDER ST': [
+            'California',
+            'Utah',
+            'Nevada',
+            'New Mexico'
+        ]
+    },
+    'NY': {
+        'NAME': "New York",
+        'POPULATION': 19750000,
+        'BORDER ST': [
+            'Vermont',
+            'Massachusetts',
+            'Connecticut',
+            'Pennsylvania',
+            'New Jersey'
+        ]
+    }
+}
+current_node = largest_dictionary['CA']
+print(current_node)
+print(current_node['NAME'])
+print(current_node['POPULATION'])
+
