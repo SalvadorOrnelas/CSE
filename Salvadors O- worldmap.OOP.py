@@ -1,4 +1,4 @@
-class Room(object):
+-class Room(object):
     def __init__(self, name, north, south, west, east, description):
         self.name = name
         self.north = north
@@ -61,4 +61,3 @@ while True:
             print("you cannot go this way")
     else:
         print("direction not recognized")
-        print()

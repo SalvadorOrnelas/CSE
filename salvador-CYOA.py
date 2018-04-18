@@ -132,3 +132,4 @@ class Socks(Clothing):
 
     def Slide_on(self):
         print("there some socks there how about you put them on")
+        
