@@ -1,18 +1,19 @@
 class Character(object):
-    def __init__(self, name, inventory, description, health):
+    def __init__(self, name, inventory, description, health, location):
         self.name = name
-        self.inventory = inventory
+        self.inventory = inventory  # List
         self.description = description
         self.health = health
+        self.location = location
 
-    def move(self):
-        print("%s moves" % self.name)
+    def move(self, direction):
+        self.location = globals()[getattr(self.location, direction)]
 
-    def talk(self):
-        pass
+    def pick_up(self, item):
+        self.inventory.append(item)
+        print("You pick up the %s" % item.name)
 
-char1 = Character("Salvador", [], "Short, long hair, etc", 100)
-char1.move()
 
-char2 = Character("Alberto", [], "tall, short hair, etc", 100)
+char1 = Character("Salvador", [], "Short, long hair, etc", 100, "center of mall")
 
+char2 = Character("Alberto", [], "tall, short hair, etc", 100, "center of mall")
